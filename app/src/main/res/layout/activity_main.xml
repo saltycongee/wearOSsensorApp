@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:boxedEdges="all">
+
+        <TextView
+            android:id="@+id/deviceID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device ID:" />
+
+        <TextView
+            android:id="@+id/connectivityStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+
+        <TextView
+            android:id="@+id/heartRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate" />
+
+        <TextView
+            android:id="@+id/Accelerometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer" />
+
+        <TextView
+            android:id="@+id/Steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Steps" />
+
+        <TextView
+            android:id="@+id/Temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature" />
+
+        <TextView
+            android:id="@+id/heartBeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Beat" />
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>
