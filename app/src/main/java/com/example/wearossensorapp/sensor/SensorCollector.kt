@@ -73,9 +73,6 @@ class   SensorCollector : SensorEventListener {
       sensorManager.registerListener(this, this.heartBeat, SensorManager.SENSOR_DELAY_UI, 100000)
     }
     Log.d(TAG,"Sensors Started")
-    //for debugging
-//    this.sensor = sensor ?: sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT)
-//    sensorManager.registerListener(this, this.sensor, SensorManager.SENSOR_DELAY_UI, 100000)
   }
 
   override fun onSensorChanged(event: SensorEvent?) {
